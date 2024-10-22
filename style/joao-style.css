@@ -29,3 +29,7 @@ header{
     color: #1D1D1DAD;
     font-weight: 700;
 }
+
+header .nav-item a:hover{
+    color: orange;
+}
