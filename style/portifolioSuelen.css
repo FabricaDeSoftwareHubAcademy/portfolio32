@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundotelaprinc{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    backdrop-filter: blur(0.9px);
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(214, 170, 103, 0.575);
+    position: fixed;
+}
+.menu-top{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#logomenu{
+    width: 180px;
+}
+.lista-menu{
+    /* background-color: black; */
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.item-menu{
+    /* background-color: brown; */
+    padding-left: 22px;
+}
+.nav-link{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif cursive;
+}
+.nav-link:hover{
+    color: rgba(6, 58, 58, 0.418);
+}
+.meio{
+    padding-top:200px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/portifolioSuelenImg/book.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(0.9px); */
+}
+#titulo{
+    margin-bottom: 400px;
+    width: 35%;
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 24px;
+    box-shadow: 10px 15px 10px 5px rgb(153, 153, 153);
+    
+}
+#img-suelen{
+    margin-bottom: 400px;
+    margin-left: 50px;
+    width:320px;
+    height:320px;
+    border-radius:205px;
+    box-shadow: 10px 15px 10px 5px rgba(139, 69, 19, 0.678);
+}
+.area-cursos{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(182, 97, 75);
+}
+.bola{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb (255, 253, 255);
+    padding: 2px;
+}
+#img-circulo{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 2px 10px 5px;
+}
+#DescricaoCurso{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif cursive;
+    margin-left: 60px;
+}
+.info-rodap{
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: double;
+}
+footer{
+    background-color: rgba(184, 110, 80, 0.911);
+}
+.footer-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    gap: 18px;
+    align-items: center;
+}
+.copyright{
+    color: black;
+    font-weight: 500;
+}
+.social-media-buttons{
+    display: flex;
+    gap: 38px;
+}
+.social-media-buttons a{
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 1,25rem;
+    color: var(--color-neutra-2); 
+    box-shadow: 0px 0px 12px 4px rgba(252, 103, 4, 0.548);
+    transition:  box-shadow .3s ease;
+}
+.social-media-buttons a:hover{
+    box-shadow: 0px 0px 12px 8px rgb(163, 78, 9) ;
+}
