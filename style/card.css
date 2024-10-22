@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 *{
     scroll-behavior: smooth;
 }
 #cardMain{
     width: 100%;
-    /* height: 100vh; */
-    background-color: #000000;
+    /* height: 100; */
+    background-color: #18181b;
     padding: 20px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
+}
+.containerCards{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
 }
 
 /* From Uiverse.io by joe-watson-sbf */ 
@@ -212,4 +222,60 @@ ul {
 }
 .handImg{
     width: 100%;
+}
+
+.palavrasFlutuantes{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  flex-wrap: wrap;
+
+  border: 3px solid red;
+  position: absolute;
+  gap: 100px;
+
+}
+
+.marcaDagua{
+  font-size: 80px;
+  color: #18181b;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.37);
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  /* text-shadow: 5px 5px 5px white; */
+}
+.marcaDagua:nth-child(1){
+  transform: rotate(30deg);
+}
+.marcaDagua:nth-child(2){
+  transform: rotate(60deg);
+}
+.marcaDagua:nth-child(3){
+  transform: rotate(30deg);
+}
+.marcaDagua:nth-child(4){
+  transform: rotate(-30deg);
+  margin-top: 100px;
+}
+.marcaDagua:nth-child(5){
+  transform: rotate(30deg);
+}
+.marcaDagua:nth-child(6){
+  transform: rotate(-30deg);
+  margin-top: 100px;
+}
+.marcaDagua:nth-child(7){
+  transform: rotate(-30deg);
+}
+.marcaDagua:nth-child(8){
+  transform: rotate(40deg);
+}
+.marcaDagua:nth-child(9){
+  transform: rotate(20deg);
+  margin-top: 100px;
 }
