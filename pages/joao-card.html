@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Senac Hub</title>
-    <link rel="stylesheet" href="../style/joao-style.css">
+    <title>Portfólio João Guilherme</title>
+    <link rel="stylesheet" href="../style/styles-joao/joao-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../js/scripts-joao/script.js"></script>
 </head>
 <body>
     <header>
@@ -19,24 +20,89 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section class="topo-do-site">
-            <div class="txt-topo-site">
-                <h1>Aluno da <span>Fábrica de Software 32</span></h1>
-                <p>Estudante, 18 anos, cursando graduação em Análise e Desenvolvimento de Sistemas, 3ª semestre.
-                    Em busca de uma oportunidade de estágio na área de Tecnologia da Informação. Ainda não possuo experiência profissional. Gostaria muito de poder atuar na área, já praticando o que será ensinado em sala de aula. Tenho bastante facilidade e interesse em aprender.</p>
-                
-                <div class="btn-contato">
-                    <a href="#">
-                        <button>Entre em Contato</button>
-                    </a>
-                </div>
-                <div class="img-topo-site">
-                    <img src="../assets/foto-joao.jpeg" alt="Foto Inicial" width="400px">
-                </div>
+    <main id="width" class="width">
+        <div class="header_left">
+            <h1><span class="three">Aluno da </span><span>Fábrica de Software 32</span></h1>
+            <p>Estudante, 18 anos, cursando graduação em Análise e Desenvolvimento de Sistemas, 4ª semestre.
+               Trabalho na empresa FIEMS atualmente como analista de sistemas. Tenho bastante facilidade e interesse em aprender.</p>
+            <a href="#about" class="btn btn-primary">Saiba Mais</a>
+        </div>
+        <div class="header_right">
+            <div class="header_img">
+                <img src="../assets/assets-joao/foto-joao.jpeg" alt="Foto" class="joao">
             </div>
-        </section>
+        </div>
     </main>
+    <section id="about" class="about">
+        <div class="about_left">
+            <h2 class="secondary-title">Além do Código: quem sou eu?</h2>
+            <p>
+                Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre meu trabalho:
+            </p>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><img src="../assets/assets-joao/linkedin.png" alt="Linkedin" class="linkedin"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../assets/assets-joao/instagram.png" alt="Instagram" class="instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="about_right">
+            <h3>Desenvolvedor Full Stack apaixonado por tecnologia e soluções criativas</h3>
+            <p>
+                Eu amo o desafio de encontrar soluções inovadoras e criativas para
+                problemas complexos e estou sempre buscando aprender e crescer como
+                profissional.
+            </p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="skills_content">
+            <h2>Minhas Ferramentas</h2>
+            <p class="description">
+                Descubra as habilidades e ferramentas que domino e que me permitem criar soluções criativas e funcionais para meus clientes
+            </p>
+            <ul>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="../assets/assets-joao/vscode-removebg-preview.png" alt="VsCode" class="VsCode">
+                    </div>
+                    <h3>IDE VsCode</h3>
+                    <p>
+                        Possui grande dominio da IDE do Vscode para manipulação e desenvolvimento de Código. É uma das IDE's atualmente mais utilizadas
+                        no mercado de trabalho e de fácil acesso.
+                    </p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="../assets/assets-joao/figma-removebg-preview.png" alt="Figma" class="Figma">
+                    </div>
+                    <h3>Figma</h3>
+                    <p>
+                        Possui grande dominio da IDE do Vscode para manipulação e desenvolvimento de Código
+                    </p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="../assets/assets-joao/node-removebg-preview.png" alt="Node" class="Node">
+                    </div>
+                    <h3>Node</h3>
+                    <p>
+                        Possui grande dominio da IDE do Vscode para manipulação e desenvolvimento de Código
+                    </p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="../assets/assets-joao/mysql-removebg-preview.png" alt="MYSQL" class="MYSQL">
+                    </div>
+                    <h3>MySql Workbench</h3>
+                    <p>
+                        Possui grande dominio da IDE do Vscode para manipulação e desenvolvimento de Código
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
