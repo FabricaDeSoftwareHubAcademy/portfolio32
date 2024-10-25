@@ -53,7 +53,7 @@ span{
 
 /* ESTILO DO CABEÇALHO DO SITE */
 .nav-bar{
-    width: 60%;
+    width: 65%;
     display: flex;
     justify-content: flex-end;
 }
