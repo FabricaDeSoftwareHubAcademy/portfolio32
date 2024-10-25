@@ -4,6 +4,9 @@
 *{
     scroll-behavior: smooth;
 }
+html, body{
+  overflow-x: hidden;
+}
 #cardMain{
     width: 100%;
     height: auto;
@@ -21,7 +24,6 @@
   z-index: 2;
 }
 
-/* From Uiverse.io by joe-watson-sbf */ 
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -263,3 +265,119 @@ ul {
   margin-top: 100px;
 }
 
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+
+}
+
+.background span {
+  width: 8vmin;
+  height: 8vmin;
+  border-radius: 8vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+  color: #5bd719;
+  top: 56%;
+  left: 29%;
+  animation-duration: 10s;
+  animation-delay: -12s;
+  transform-origin: 10vw -14vh;
+  box-shadow: 16vmin 0 2.438848247201185vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #0544f0;
+  top: 64%;
+  left: 27%;
+  animation-duration: 45s;
+  animation-delay: -50s;
+  transform-origin: -22vw 2vh;
+  box-shadow: -16vmin 0 2.4529652526396157vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #af5f04;
+  top: 36%;
+  left: 99%;
+  animation-duration: 42s;
+  animation-delay: -8s;
+  transform-origin: -9vw 0vh;
+  box-shadow: 16vmin 0 2.549389332225041vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #af5f04;
+  top: 83%;
+  left: 67%;
+  animation-duration: 45s;
+  animation-delay: -39s;
+  transform-origin: -12vw 17vh;
+  box-shadow: 16vmin 0 2.0103946843347833vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #5bd719;
+  top: 46%;
+  left: 5%;
+  animation-duration: 55s;
+  animation-delay: -20s;
+  transform-origin: -8vw 8vh;
+  box-shadow: -16vmin 0 2.913849723544852vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #5bd719;
+  top: 54%;
+  left: 9%;
+  animation-duration: 18s;
+  animation-delay: -3s;
+  transform-origin: -15vw 17vh;
+  box-shadow: -16vmin 0 2.943119892673229vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #af5f04;
+  top: 37%;
+  left: 21%;
+  animation-duration: 9s;
+  animation-delay: -6s;
+  transform-origin: -10vw -21vh;
+  box-shadow: 16vmin 0 2.5154287634155486vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #5bd719;
+  top: 28%;
+  left: 5%;
+  animation-duration: 31s;
+  animation-delay: -14s;
+  transform-origin: 23vw -20vh;
+  box-shadow: 16vmin 0 2.793457886386895vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #5bd719;
+  top: 18%;
+  left: 35%;
+  animation-duration: 26s;
+  animation-delay: -39s;
+  transform-origin: -13vw 8vh;
+  box-shadow: -16vmin 0 2.2250295452458486vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #5bd719;
+  top: 99%;
+  left: 56%;
+  animation-duration: 30s;
+  animation-delay: -43s;
+  transform-origin: 3vw 12vh;
+  box-shadow: -16vmin 0 2.979542348660242vmin currentColor;
+} 
