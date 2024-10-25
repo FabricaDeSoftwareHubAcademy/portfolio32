@@ -8,6 +8,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../style/card-suelen.css">
+
 </head>
 <body class="fundotelaprinc" >
     <!-- MENU -->
@@ -18,30 +19,59 @@
             </div>
             <ul class="lista-menu">
                 <li class="item-menu"><a href="#HOME" class="nav-link">HOME</a></li>
-                <li class="item-menu"><a href="#CURSOS" class="nav-link">CURSOS</a></li>
+                <li class="item-menu"><a href="#PROJETOS" class="nav-link">PROJETOS</a></li>
                 <li class="item-menu"><a href="#CONTATO" class="nav-link">CONTATO</a></li>
             </ul>
         </nav>
     </header>
     <!-- MEIO -->
     <main class="meio" id="HOME">
-        <h1 id="titulo">Curiosa sobre tudo... Estudante de desenvolvimento de sistemas, explorando o universo da tecnologia e programação. </h1>
+        <h1 id="titulo">Uma curiosa sobre tudo... Bacharel em Letra, Estudante de desenvolvimento de sistemas, explorando o universo da tecnologia e programação. </h1>
         <img src="../assets/card-suelen/official.jpg" alt="img-suelen" id="img-suelen">
     </main>
+    <div id="projeto">
+      <h3 class="section-subtitle">Projetos e desenvolvimentos</h3>
+    </div>
     <!-- CURSOS -->
-     <section class="area-cursos" id="CURSOS">
-        <div class="bola">
-            <img src="../assets/card-suelen/01.webp" alt="curso" id="img-circulo">
-            <h1 id="DescricaoCurso">Curso de JS</h1>
+    <section class="area-cursos-su" id="PROJETOS">
+            <div class="area-cards-su">
+              <div class="container-su">
+                <div class="card-su" onclick="openModal('../assets/card-suelen/py01.png')">
+                  <img src="../assets/card-suelen/py01.png" alt="Desenvolvimento Algoritmo em Python">
+                  <div class="card-title">Desenvolvimento Algoritmo em Python</div>
+                  <div class="card-description">Atividade aula de Python</div>
+              </div>
+
+              <div class="card-su" onclick="openModal('../assets/card-suelen/py02.png')">
+                <img src="../assets/card-suelen/py02.png" alt="Primeira Página em HTML/CSS">
+                <div class="card-title">Desenvolvimento Algoritmo em Python</div>
+                <div class="card-description">Atividade aula de Python</div>
+              </div>
+
+              <div class="card-su" onclick="openModal('../assets/card-suelen/js01.png')">
+                <img src="../assets/card-suelen/js01.png" alt="Outro Projeto">
+                <div class="card-title">Desenvolvimento Algoritmo em JavaScript</div>
+                <div class="card-description">Primeiro Código em JavaScript</div>
+              </div>
+
+              <div class="card-su" onclick="openModal('../assets/card-suelen/html01.png')">
+                <img src="../assets/card-suelen/html01.png" alt="Outro Projeto">
+                <div class="card-title">Primeira Página em HTML/CSS</div>
+                <div class="card-description">Primeira página inspirada na saga Harry Potter</div>
+              </div>
+            </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal-su">
+          <span class="close-su" onclick="closeModal()">&times;</span>
+          <div class="modal-content-su">
+              <img id="modalImage" src="" alt="Imagem do Projeto">
+          </div>
         </div>
-        <div class="bola">
-            <img src="../assets/card-suelen/02.png" alt="curso" id="img-circulo">
-            <h1 id="DescricaoCurso">Curso de JS</h1>
-        </div>
-     </section>
-     <!-- RODAPÉ -->
-     <footer id="#CONTATO">
-        <div class="footer-itens">
+      </div>
+  </section>
+     
+     <footer>
+        <div class="footer-itens" id="CONTATO">
             <span class="copyright">
                 &copy Suelen Cabral 2024
             </span>
@@ -139,5 +169,6 @@
               
         </div>
     </footer>
+<script src="../js/card-suelen.js"></script> 
 </body>
 </html>
