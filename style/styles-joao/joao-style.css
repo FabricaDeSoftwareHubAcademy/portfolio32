@@ -12,7 +12,7 @@ header{
     width: 100%;
     padding: 28px 8%;
     top: 0;
-    background-color: #FAF0E6;
+    background-color: black;
     position: sticky;
     z-index: 3;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
@@ -64,7 +64,7 @@ span{
 }
 .nav-item a{
     text-decoration: none;
-    color: #1D1D1DAD;
+    color: white;
     font-weight: 700;
 }
 header .nav-item a:hover{
@@ -125,7 +125,7 @@ img.joao {
     object-fit: cover;
 }
 .about {
-    background-color: black;
+    background-color: #282828;
     color: #EAEAEA;
     display: flex;
     justify-content: space-between;
@@ -226,6 +226,11 @@ img.joao {
     padding: 40px 0;
     background-color: #282828;
     color: #EAEAEA;
+    padding-bottom: 250px;
+}
+
+.projects h2{
+    padding-bottom: 70px;
 }
 
 .projects-container {
@@ -254,11 +259,11 @@ img.joao {
 
 .card-front, .card-back {
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: 100%;
     backface-visibility: hidden; /* Oculta o verso */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px orange;
 }
 
 .card-front {
@@ -282,4 +287,42 @@ img.joao {
 .card-front h3, .card-back h3 {
     margin: 10px 0;
     color: #FF8C00;
+}
+
+/* AREA FOOTER */
+
+.footer {
+    background-color: #363636;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social-footer {
+    margin-top: 10px;
+}
+
+.social-footer a {
+    margin: 0 10px;
+}
+
+.social-footer img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-footer img:hover {
+    transform: scale(1.2);
 }
