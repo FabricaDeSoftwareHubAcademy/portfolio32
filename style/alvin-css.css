@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.corpo-portfolio{
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: ;
+    background-repeat: no-repeat;
+    background-position: fixed; */
+}
+
+.header-alv{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #BF8A00;
+    height: 10vh;
+    width: 100vw;
+    justify-content: end;
+}
+
+.header-util{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-header{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.nav-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: space-around;
+}
+
+.black-bar{
+    /* background-color: #00000033; */
+    background-color: rebeccapurple;
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
