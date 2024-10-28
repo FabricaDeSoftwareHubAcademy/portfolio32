@@ -168,6 +168,9 @@ body{
     color: red;
     text-decoration: none;
 }
+.menu-portfolio-juliana a{
+  color: aliceblue;
+}
 
 
 
@@ -270,6 +273,8 @@ body{
 }
 
 .conteudo-portfolio-ju{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -304,6 +309,7 @@ body{
     justify-content: center;
     font-size: 18px;
     font-weight: 300;
+    
 }
 .texto-principal-ju{
     display: flex;
@@ -420,7 +426,7 @@ body{
 /* Logando */
 
 .logando-ju-portfolio{
-    margin-top: 140px;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 .logando-juju-portfolio{
@@ -428,7 +434,6 @@ body{
 }
 
 .loader-ju {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -768,7 +773,7 @@ body{
 
 /*Contato*/ 
 .footer-portfolio-ju{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
