@@ -35,8 +35,8 @@ section {
 }
 
 .sobre-content {
-    position: relative; /* Para posicionar a bolinha */
-    max-width: 50%; /* Limita a largura a 50% da tela */
+    position: relative; 
+    max-width: 50%;
  
 }
 
