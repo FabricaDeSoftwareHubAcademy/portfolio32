@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link rel="stylesheet" href="../style/grazi-card.css">
+  <title>Portifólio Grazi</title>
+</head>
+<body>
+  <main>
+    <!-- HEADER -->
+    <header>
+      <i class="fa-solid fa-laptop-code" id="navLogo"> Grazi </i>
+      <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item active"></li><a href="#home">Home</a>
+            <li class="nav-item active"></li><a href="#projects">Projetos</a>
+            <li class="nav-item active"></li><a href="#contact">Contato</a>
+        </ul>
+    
+      </nav>
+
+    </header>  
+   
+    <!-- HOME -->
+    <section id="home">
+      <div class="home-info">
+        <h2>Olá, sou a Grazi</h2>
+        <span class="home-position">Analista de Requisitos, DBA, FullStack</span>
+        <span class="home-resume">
+          Aluna da Fabrica de Software. Graduanda em Análise e Desenvolvimento de Sistemas pela Faculdade Estácio. Graduanda em Direito pela Universidade Católica Dom Bosco(UCDB).
+        </span>
+ 
+        <button>
+          <a href="#contact">Contate-me</a>
+        </button>
+      </div>
+      <div class="home-img">
+        <!-- <img src="../assets/imagens-grazi/Screenshot_20241022-110310-000.jpg" alt="Foto de perfil"> -->
+      </div>
+    </section>
+ 
+    <!-- PROJECTS -->
+ 
+    <section id="projects">
+      <h2>Projetos</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="..//assets/imagens-grazi/imagem site portifolio.PNG" alt="Foto de um site">
+            </div>
+            <div class="project-info">
+              <h2>WebSites Modernos</h2>
+              <p> Criação de websites modernos responsivos para qualquer dispositivo </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="..//assets/imagens-grazi/Imagem ecommerc portifolio.png" alt="Foto de uma loja online">
+            </div>
+            <div class="project-info">
+              <h2> E-commerce </h2>
+              <p>  Criação de lojas online de qualquer produto ou serviço </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="..//assets/imagens-grazi/imagem sistema portifolio.png" alt="Foto de um sistema">
+            </div>
+            <div class="project-info">
+              <h2> Sistemas </h2>
+              <p> Criação de sistemas completos desde o back-end até o front-end </p>
+            </div>
+          </div>
+        </div>
+     
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+ 
+  <section id="contact">
+    <h2>Contato</h2>
+    <form>
+      <input type="text" placeholder="Digite seu nome" />
+      <input type="email" placeholder="Digite seu e-mail" />
+      <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+      <button>Enviar</button>
+    </form>
+  </section>
+ 
+  <footer>
+    copyright © 2024 Grazi Carassini. Todos os direitos reservados
+  </footer>
+  </main>  
+ 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/grazi-card.js"></script>
+</body>
+</html>

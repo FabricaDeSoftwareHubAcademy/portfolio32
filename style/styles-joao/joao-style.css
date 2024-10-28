@@ -1,0 +1,328 @@
+/* ESTILO PADRÃO DO SITE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+body{
+    background-color: #363636;
+}
+header{
+    width: 100%;
+    padding: 28px 8%;
+    top: 0;
+    background-color: black;
+    position: sticky;
+    z-index: 3;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.btn {
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: 5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn.btn-primary {
+    background-color: #3c415c;
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-primary:hover {
+    background-color: #4a4e70;
+    transform: translateY(-2px);
+}
+span{
+    color: #FF8C00;
+}
+.three{
+    color: #0000CD;
+}
+.linkedin, .instagram{
+    width: 50px;
+    height: auto;
+}
+.VsCode, .Figma, .Node, .MYSQL{
+    width: 80px;
+}
+
+/* ESTILO DO CABEÇALHO DO SITE */
+.nav-bar{
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+header .nav-item a:hover{
+    color: orange;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ESTILO DO CORPO DO SITE */
+
+.width{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+.width.header_left{
+    max-width: 62rem;
+    flex: 1;
+}
+h1{
+    padding-bottom: 40px;
+    color: white;
+}
+p{
+    padding-bottom: 40px;
+    color: white;
+}
+.width.header_left p{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+}
+.width.header_right.header_img{
+    position: relative;
+    line-height: 0;
+}
+.width.header_right.header_img.joao{
+    border-radius: 0.5rem;
+    min-width: 25rem;
+    max-width: 100%;
+}
+img.joao {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about {
+    background-color: #282828;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    border-radius: 10px;
+}
+
+.about_left, .about_right {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about_right {
+    max-width: 600px;
+}
+
+.secondary-title {
+    color: #FF8C00;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+
+.about_right h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.skills_content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.skills_content ul{
+    display: flex; /* Habilita o flexbox */
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas se necessário */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills_content h2 {
+    color: #FF8C00;
+    margin-bottom: 20px;
+}
+
+.skills_content p.description {
+    color: #B0B0B0;
+    margin-bottom: 30px;
+}
+
+.skills_item {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+.skills_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    margin-bottom: 15px;
+}
+
+.skills_item h3 {
+    font-weight: 700;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.skills_item p {
+    color: #FAFAFA;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* SEÇÃO DE CARDS */
+
+.projects {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #282828;
+    color: #EAEAEA;
+    padding-bottom: 250px;
+}
+
+.projects h2{
+    padding-bottom: 70px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    perspective: 1000px; /* Adiciona perspectiva para o efeito de rotação */
+    width: 300px;
+    height: 400px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 150%;
+    transition: transform 0.6s; /* Efeito rotação */
+    transform-style: preserve-3d; /* Permite a rotação 3D */
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg); /* Rotaciona no hover */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    backface-visibility: hidden; /* Oculta o verso */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px orange;
+}
+
+.card-front {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg); /* Rotaciona o verso para ficar oculto inicialmente */
+}
+
+.card-front h3, .card-back h3 {
+    margin: 10px 0;
+    color: #FF8C00;
+}
+
+/* AREA FOOTER */
+
+.footer {
+    background-color: #363636;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social-footer {
+    margin-top: 10px;
+}
+
+.social-footer a {
+    margin: 0 10px;
+}
+
+.social-footer img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-footer img:hover {
+    transform: scale(1.2);
+}

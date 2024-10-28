@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundotelaprinc{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    backdrop-filter: blur(0.9px);
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(214, 170, 103, 0.575);
+    position: fixed;
+}
+.menu-top{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#logomenu{
+    width: 180px;
+}
+.lista-menu{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.item-menu{
+    padding-left: 22px;
+}
+.nav-link{
+    font-size: 24px;
+    color: rgb(138, 6, 6);
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif cursive;
+}
+.nav-link:hover{
+    color: rgba(6, 58, 58, 0.418);
+}
+.meio{
+    padding-top:200px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/card-suelen/book.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(0.9px); */
+}
+#titulo{
+    margin-bottom: 400px;
+    width: 35%;
+    color: rgba(134, 34, 9, 0.928);
+    text-shadow: -1.5px -1px 0 #ffffff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 24px;
+    box-shadow: 10px 15px 10px 5px rgb(153, 153, 153);
+    
+}
+#img-suelen{
+    margin-bottom: 400px;
+    margin-left: 50px;
+    width:320px;
+    height:320px;
+    border-radius:205px;
+    box-shadow: 10px 15px 10px 5px rgba(139, 69, 19, 0.678);
+}
+.area-cursos-su{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(182, 97, 75); */
+    background: linear-gradient(
+      45deg,
+      #b65940,
+      #cb7851,
+      #d4523a,
+      #f17135,
+      #e17730,
+      #fd701f
+    );
+    backdrop-filter: blur(0.9px);
+}
+.area-cards-su{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 24px;
+}
+#projeto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:24px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #b65940,
+    #cb7851,
+    #d4523a,
+    #f17135,
+    #e17730,
+    #fd701f
+  );
+  backdrop-filter: blur(0.9px);
+}
+.section-subtitle{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: #5f1e00;
+}
+.container-su {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Estilos dos cards */
+.card-su {
+  background-color: #df770057;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.555);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-su:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.568);
+}
+
+.card-su img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos do modal */
+.modal-su {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content-su {
+  margin: 15% auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal-content-su img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-su {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  gap: 18px;
+  width: 450px;
+  padding: 40px;
+  background-color: #b65a406c;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.card-image{
+  height: 180px;
+  box-shadow: 10px 2px 10px 5px;
+}
+#card-title{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif cursive;
+    margin-left: 60px;
+    text-align: center;
+}
+.section-subtitle{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+} */
+.info-rodap{
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: double;
+}
+footer{
+    background-color: rgba(184, 110, 80, 0.911);
+}
+.footer-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    gap: 18px;
+    align-items: center;
+}
+.copyright{
+    color: black;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="Linkedin"] .filled,
+  .example-2 .icon-content a[data-social="Linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+  .example-2 .icon-content a[data-social="Whatsapp"] .filled,
+  .example-2 .icon-content a[data-social="Whatsapp"] ~ .tooltip {
+    background-color: #019927;
+  }
+
+  
