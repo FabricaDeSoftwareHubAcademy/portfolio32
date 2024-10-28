@@ -1,3 +1,7 @@
+:root{
+    --faixa-topo: #bf8900de;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +10,7 @@
 
 .corpo-portfolio{
     background-color: #000000;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     /* background-image: ;
     background-repeat: no-repeat;
@@ -14,13 +18,14 @@
 }
 
 .header-alv{
-    background-color: #BF8A00;
+    background-color: var(--faixa-topo);
     width: 100vw;
     height: 10vh;
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    z-index: 1000;
 }
 
 .header-util{
@@ -64,9 +69,55 @@
 }
 
 .black-bar{
-    background-color: #00000033;
-    display: flex;
     width: 100%;
     height: 10%;
+    background-color: #00000033;
+    display: flex;
     /* background-color: rebeccapurple; */
+}
+
+.corpo-dev{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.apresentacao{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rebeccapurple; */
+}
+
+.base-imagem{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/Alvin/Chip_veins.svg);
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.borda{
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 10px;
+    border: var(--faixa-topo) double 10px;
+}
+.base-imagem img{
+    height: 20vw;
+}
+
+
+.area-texto{
+    width: 60%;
+    height: 100%;
+    /* background-color: gray; */
 }
