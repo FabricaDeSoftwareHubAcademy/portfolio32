@@ -235,6 +235,7 @@ img.joao {
 
 .projects-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
@@ -325,4 +326,95 @@ img.joao {
 
 .social-footer img:hover {
     transform: scale(1.2);
+}
+
+/* RESPONSIVIDADE DO SITE */
+
+/* Estilo responsivo */
+@media (max-width: 1200px) {
+    .nav-bar {
+        width: 80%;
+    }
+
+    .width {
+        padding: 50px 20px;
+        flex-direction: column; /* Coloca os itens um embaixo do outro */
+        align-items: center;
+    }
+
+    .header_left, .header_right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    img.joao {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about, .skills_content, .projects {
+        padding: 20px 10px; /* Ajusta o padding */
+        flex-direction: column; /* Coloca os itens um embaixo do outro */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Coloca os cards um embaixo do outro */
+        align-items: center; /* Centraliza os cards */
+    }
+
+    .project-card {
+        width: 90%; /* Aumenta a largura dos cards */
+        margin-bottom: 20px; /* Espaçamento entre os cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: center; /* Centraliza itens */
+    }
+
+    .nav-list {
+        gap: 20px; /* Ajusta o espaço entre os itens */
+    }
+
+    .header_left, .about_left, .about_right, .skills_content ul {
+        text-align: center; /* Centraliza texto */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centraliza ícones */
+    }
+
+    .skills_item {
+        width: 100%; /* Largura total para itens de habilidade */
+        max-width: 300px; /* Limita a largura */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Coloca os cards um embaixo do outro */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Coloca o conteúdo do footer em coluna */
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    .btn {
+        padding: 0.5rem 2rem; /* Reduz o padding dos botões */
+    }
+
+    .footer h1 {
+        font-size: 1.2rem; /* Reduz o tamanho do título do footer */
+    }
+
+    .skills_item {
+        height: auto; /* Permite que a altura dos itens de habilidade se ajuste ao conteúdo */
+    }
 }
