@@ -1,0 +1,188 @@
+:root{
+    --faixa-topo: #bf8900e8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace
+}
+
+.corpo-portfolio{
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #000000;
+    
+    /* overflow: hidden; */
+}
+
+/* HEADER */
+
+.topo{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--faixa-topo);
+    z-index: 10;
+}
+
+.nav-header-stuff{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.links{
+    height: 90%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.links a{
+    height: 80%;
+    width: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border-radius: 9px; */
+    padding: 4%;
+    
+}
+
+.links img:hover{
+    height: 100%;
+    padding: 6px;
+    border-radius: 9px;
+    background-color: #000000bf;
+}
+
+.links a img{
+    height: 90%;
+}
+
+.black-bar{
+    width: 100%;
+    height: 10%;
+    background-color: #00000039;
+}
+
+.corpo-dev{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    overflow: scroll;
+}
+
+.apresentacao{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.base-imagem{
+    width: 50%;
+    height: 100%;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: purple; */
+}
+
+.CORE{
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    /* overflow: hidden; */
+}
+
+.corte{
+    height: 32vh;
+    width: 32vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.perfil{
+    height: 120%;
+}
+
+.area-img{
+    /* height: 61vh; */
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-imagem{
+    height: 75%;    
+    border-radius: 30px;
+}
+
+.area-texto{
+    height: auto;
+    width: 70%;
+
+    margin-top: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 4%;
+    
+    padding: 10px;
+    color: var(--faixa-topo);
+    font-size: 22px;
+    border: var(--faixa-topo) solid 2px;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+li{
+    list-style: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    .apresentacao{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .corte{
+        height: 32vw;
+        width: 32vw;
+    }
+}
