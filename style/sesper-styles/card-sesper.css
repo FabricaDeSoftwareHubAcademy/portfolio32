@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --vermelho: rgb(185, 0, 0);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+.navegacao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegacao .logo span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--vermelho);
+    text-shadow: 0 0 10px var(--vermelho);
+}
+.hamburg,.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    font-size: clamp(2.5rem,0.5rem + 5vw, 3rem);
+    display: none;
+}
+.navegacao .links{
+    display: flex;
+}
+.navegacao .links a{
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+.navegacao .links a:hover{
+    color: var(--vermelho);
+    border-bottom: 2px solid var(--vermelho);
+}
+.opcoes{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    transform: translateY(-400px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(5px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+.opcoes a{
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+}
+.opcoes a:hover{
+    background-color: var(--vermelho);
+}
+section{
+    width: 100%;
+    height: 90vh;
+}
+.fundo-principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.fundo-principal .image{
+    width: 450px;
+    height: 80vh;
+}
+.fundo-principal .image img{
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px var(--vermelho);
+}
+
+.fundo-principal .caixa-de-texto{
+    color: white;
+    width: 40%;
+    min-height: 100px;
+}
+.caixa-de-texto h1{
+    font-size: clamp(2rem, 1rem + 5vw,1.9rem);
+}
+.caixa-de-texto h1 span{
+    font-weight: 700;
+    text-shadow: 0 0 10px var(--vermelho);
+    color: var(--vermelho);
+}
+.texto{
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-weight: 700;
+    position: relative;
+}
+.texto span:before{
+    content: "";
+    color: var(--vermelho);
+    animation: words 20s infinite;
+}
+@keyframes words {
+    0%,50%{
+        content: "Programador";
+    }
+    51%,100%{
+        content: "Desenvolvedor";
+    }
+}
+.caixa-de-texto p{
+    font-size: clamp(0.4rem,0.2rem + 9vw,1rem);
+    margin: 10px 0;
+}
+.social-links i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--vermelho);
+    border-radius: 50%;
+    color: var(--vermelho);
+    margin: 5px 15px 5px 0;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-links i:hover{
+    scale: 1.3;
+    filter: drop-shadow(0 0 10px var(--vermelho));
+    background-color: var(--vermelho);
+    color: white;
+}
+@media (max-width:885px){
+    nav .logo{
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+    .fundo-principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacao .links{
+        display: none;
+    }
+    .hamburg,.cancel{
+        display: block;
+    }
+    .fundo-principal .caixa-de-texto{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .fundo-principal .image{
+        width: 300px;
+        height: 35vh;
+    }
+    .texto{
+        font-size: 2rem;
+    }
+}

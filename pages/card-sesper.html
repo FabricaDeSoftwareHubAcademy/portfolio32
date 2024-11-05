@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c33f31633.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/sesper-styles/card-sesper.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="navegacao">
+            <div class="logo">
+                <span>Lucas Sesper</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="">Inicio</a></div>
+                <div class="link"><a href="">Sobre</a></div>
+                <div class="link"><a href="">Conhecimentos</a></div>
+                <div class="link"><a href="">Contato</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="opcoes">
+            <a href="">Inicio</a>
+            <a href="">Sobre</a>
+            <a href="">Conhecimentos</a>
+            <a href="">Contato</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </nav>
+    <section>
+        <div class="fundo-principal">
+            <div class="image">
+                <img src="../assets/sesper-img/1000057643.jpg" alt="Image">
+            </div>
+            <div class="caixa-de-texto">
+                <h1>Olá, eu sou<span> Sesper</span></h1>
+                <h2 class="texto">Eu sou <span></span></h2>
+                <p>Estou iniciando no mundo de Desenvolvimento de Sistemas, tenho conhecimento em Python.
+                     Estou aprendendo PHP e JavaScript e também Pretendo participar da area de Desenvolvimento de Jogos entre outras coisas.
+                    </p>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".opcoes")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".opcoes")
+            navbar.style.transform = "translateY(-400px)"
+        }
+    </script>
+</body>
+</html>
