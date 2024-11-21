@@ -1,65 +1,167 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #222;
-    padding: 20px;
+    background: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-.imagem-fundo {
-    background-image: url('../assets/card-gerson/tch.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.sobre-imagem {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 0;
 }
 
-.sobre-content {
-    position: relative; 
-    max-width: 50%;
- 
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
 
+#sobre p {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-.bolinha {
-    position: absolute;
-    top: 50%;
-    right: -800px;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 300px;
+#sobre img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
     border-radius: 50%;
-    overflow: hidden;
-    margin-top: 50px;
+}
+#sobre img.floating-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; /* Define o tamanho máximo da imagem */
+    border-radius: 10%; /* Tornando a imagem redonda */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo da imagem */
+    position: relative;
+    z-index: 1; /* Garante que a imagem esteja sobre outros elementos */
+    transform: translateY(-10px); /* Imagem flutua levemente para cima */
+    animation: float 3s ease-in-out infinite; /* Animação para dar o efeito de flutuação contínua */
 }
 
-.imagem-bolinha {
-    width: 100%;
+/* Definindo a animação de flutuação */
+@keyframes float {
+    0% {
+        transform: translateY(-10px); /* Inicia levemente flutuando para cima */
+    }
+    50% {
+        transform: translateY(10px); /* Vai para baixo */
+    }
+    100% {
+        transform: translateY(-10px); /* Volta para cima */
+    }
+}
+
+
+.project-card {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
     height: auto;
+    border-radius: 8px;
+}
+
+#abilidades ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#abilidades ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#contato form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contato form button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    background-color: #222;
 }
+
+footer p {
+    font-size: 14px;
+}.social-links {
+    margin-top: 20px; 
+    text-align: center; 
+}
+
+.social-link {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.social-link img {
+    width: 40px; /* Define o tamanho do ícone */
+    height: 40px; /* Define o tamanho do ícone */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.social-link img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+

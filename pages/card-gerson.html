@@ -8,35 +8,83 @@
 </head>
 <body>
     <header>
-        <h1>Gerson Gouvêa de Souza</h1>
-    </header>
-    
-    <section id="imagem-fundo" class="imagem-fundo">
-        <div class="sobre-imagem">
+        <div class="container">
+            <h1>Bem-vindo ao meu Portfólio Digital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#abilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    
+    </header>
+
     <section id="sobre">
-        <div class="sobre-content">
-            <h2>Sobre Mim</h2>
-            <p>Ola, Meu nome é Gerson e tenho 20 anos e nasci no rio de janeiro,depois de vir
-                para Campo Grande passei a gostar de TI e isso me levou ao senac, e nos dias 
-                de hoje cursando Analize e Desenvolvimento de Sitemas no senac, o que eu quero 
-                ser um desenvolvedor web para criar experiências digitais incríveis.</p>
-            <div class="bolinha">
-                <img src="../assets/card-gerson/180.jpeg" alt="Imagem" class="imagem-bolinha">
+        <div class="container flex-container">
+            <img src="../assets/card-gerson/foto.jpg" alt="Foto de [Seu Nome]" class="floating-image" />
+            <div class="texto">
+                <h2>Sobre Mim</h2>
+                <p>Olá, sou Gerson, tenho 21 anos e nasci no Rio de Janeiro, no momento estou cursando o curso de Tecnico em Analise e Desenvolvimento de Sistemas na Instituição SENAC em Mato Grosso do Sul e estou sempre em busca de novos desafios.</p>
             </div>
         </div>
     </section>
-    
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Você pode me encontrar em <a href="mailto:gersongouvea48@gmail.com">gersongouvea48@gmail.com</a>.</p>
+    <section id="projetos">
+        <div class="container project-container">
+            <div class="project-card">
+                <img src="../assets/card-gerson/codigo1.PNG" alt="Projeto 1">
+                <h3>HTML e CSS do Portfólio</h3>
+                <p>A imagem acima demonstra o código do portfólio.</p>
+            </div>
+            <div class="project-card">
+                <img src="../assets/card-gerson/database.PNG" alt="Projeto 2">
+                <h3>Banco de Dados</h3>
+                <p>Um banco de dados criado na ideia de representar vendas e retiradas de livros em uma biblioteca.</p>
+            </div>
+        </div>
+        
     </section>
     
+    <section id="abilidades">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>Python</li>
+                <li>Figma</li>
+                <li>Mysql</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Gostou do meu trabalho? Vamos conversar!</p>
+            <form action="enviar-email.php" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    
+    <div class="social-links">
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">
+            <img src="../assets/card-gerson/linkedin.PNG" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/gersin231" target="_blank" class="social-link">
+            <img src="../assets/card-gerson/github.PNG" alt="GitHub">
+        </a>
+    </div>
+    
+
     <footer>
-        <p>2024</p>
+        <div class="container">
+            <p>&copy; 2024 [Gerson Gouvêa de Souza] - Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
-
