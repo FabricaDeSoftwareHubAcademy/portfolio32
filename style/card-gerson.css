@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.container2 {
     width: 80%;
     margin: 0 auto;
 }
@@ -61,7 +61,7 @@ section h2 {
 #sobre img.floating-image {
     display: block;
     margin: 0 auto;
-    max-width: 50%; /* Define o tamanho máximo da imagem */
+    max-width:26%; /* Define o tamanho máximo da imagem */
     border-radius: 10%; /* Tornando a imagem redonda */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo da imagem */
     position: relative;
@@ -86,7 +86,7 @@ section h2 {
 
 .project-card {
     display: inline-block;
-    width: 45%;
+    width: 38%;
     margin: 20px 2.5%;
     background: #f4f4f4;
     padding: 20px;
